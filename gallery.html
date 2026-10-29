@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Alimentar | Gallery</title>
+    <link rel="stylesheet" href="../CSS/redeAlimentar.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">REDE <span>ALIMENTAR</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="page-intro section">
+        <div class="section-heading centered">
+            <p class="eyebrow">OUR VISUAL JOURNEY</p>
+            <h1>Our <span>Gallery</span></h1>
+            <div class="gold-line"></div>
+            <p>Click on any image to view it in full size.</p>
+        </div>
+    </section>
+
+    <section class="gallery-section section">
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="../media/pexels-flavionascimento-39450944.jpg" alt="TABLE" class="lightbox-trigger"></div>
+            <div class="gallery-item"><img src="../media/pexels-bertellifotografia-17057009.jpg" alt="International " class="lightbox-trigger"></div>
+            <div class="gallery-item"><img src="../media/pexels-bertellifotografia-9702314.jpg" alt="Sweet Finishes" class="lightbox-trigger"></div>
+            <div class="gallery-item"><img src="../media/pexels-palomalimafotos-38658105.jpg" alt="Traditional Breakfast" class="lightbox-trigger"></div>
+        </div>
+    </section>
+
+   
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div id="lightboxCaption"></div>
+    </div>
+</main>
+
+<script src="../JAVA/menu.js"></script>
+</body>
+</html>

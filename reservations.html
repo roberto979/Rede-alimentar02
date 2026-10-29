@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Alimentar | Reservations</title>
+    <link rel="stylesheet" href="../CSS/redeAlimentar.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div id="welcomeMessageBar" style="background: var(--gold, #d4af37); color: #211a14; text-align: center; padding: 10px 15px; font-family: 'Cinzel', serif; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.05em; display: none; transition: all 0.5s ease;"></div>
+<header class="site-header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">REDE <span>ALIMENTAR</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reservations.html" class="active">Reservations</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="reservation-section section">
+        <div class="contact-form-container" style="max-width: 600px; margin: 0 auto;">
+            <h2>Book Your <span>Table</span></h2>
+            <div class="gold-line"></div>
+            <div id="resFeedback" class="form-feedback" style="display: none; padding: 1rem; margin-bottom: 1rem; border-radius: 4px;"></div>
+            
+            <form id="reservationForm" class="contact-form">
+                <div class="form-group">
+                    <label for="resName">Full Name</label>
+                    <input type="text" id="resName" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="resDate">Date</label>
+                    <input type="date" id="resDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="resGuests">Number of Guests (1-20)</label>
+                    <input type="number" id="resGuests" min="1" max="20" required placeholder="Number of guests">
+                </div>
+                <button type="submit" class="btn btn-gold">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<script src="../JAVA/menu.js"></script>
+</body>
+</html>
